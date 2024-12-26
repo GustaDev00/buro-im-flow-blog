@@ -1,6 +1,5 @@
 import { CustomBr } from "@/components/atoms/custom-br";
 import { FacebookIcon } from "@/components/svgs/facebook";
-import { HomeIcon } from "@/components/svgs/home";
 import { InstagramIcon } from "@/components/svgs/instagram";
 
 export default {
@@ -9,7 +8,7 @@ export default {
       text: "Seiten",
       menu: "navigation",
       items: [
-        { title: "Home", href: "/", icon: HomeIcon },
+        { title: "Home", href: "/" },
         { title: "Blog", href: "/blog" },
         { title: "Über uns", href: "/portfolio" },
         { title: "Kontakt", href: "/kontakt" },
@@ -18,13 +17,13 @@ export default {
     contact: [
       {
         text: "Phone",
-        content: "076 469 28 31",
-        link: "tel:+0764692831",
+        content: "+41 79 934 67 83",
+        link: "tel:+41799346783",
       },
       {
         text: "E-Mail",
-        content: "info@trockenbau-dac.ch",
-        link: "mailto:info@fiberweb.ch",
+        content: "info@bueroimflow.ch",
+        link: "mailto:info@bueroimflow.ch",
       },
     ],
     social_share: {
@@ -49,7 +48,7 @@ export default {
     },
     footer: {
       text: "Kontakt Informationen",
-      copy: "Copyright © 2024 Ha-Tech GmbH",
+      copy: "Copyright © 2024 Büro im Flow",
       agency: (
         <>
           Mit 💚 entwickelt von{" "}
@@ -63,25 +62,25 @@ export default {
     },
   },
   home: {
-    title: "Blog FiberWeb",
+    title: "Blog Büro im Flow",
     description: (
       <>
-        Die HA-Tech Gmbh umfasst ein mittlerweile 14-köpfiges Team und ist tätig in der
-        <CustomBr byViewport="desktop" /> gesamten Deutschschweiz.
+        Einfacher Zugang zu präzisen Ergebnissen und persönlicher
+        <CustomBr byViewport="desktop" /> Betreuung – digital, effizient und verlässlich.
       </>
     ),
   },
   copy: {
-    copy: "Copiar link",
-    copied: "Link copiado",
+    copy: "Link kopieren",
+    copied: "Link kopiert",
   },
-  time: "minutos de leitura",
+  time: "Leseminuten",
   latest: {
-    title: "Lastet Articles",
+    title: "Neueste Artikel",
   },
   cta: {
     title: "Mehr dazu",
-    text: "Ihm blieb einiges übrig zweifeln? Kontaktieren Sie uns im Augenblick!",
+    text: "Noch Fragen? Kontaktieren Sie uns noch heute.",
     href: "#",
   },
 };

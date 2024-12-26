@@ -4,7 +4,7 @@ import { mediaMaxWidth, mediaMinWidth } from "@/utils/media-query";
 import styled from "styled-components";
 
 export const Header = styled.header`
-  padding: 3.2rem 0;
+  padding: 0;
   position: fixed;
   top: 0;
   width: 100%;

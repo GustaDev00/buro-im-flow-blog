@@ -1,14 +1,14 @@
 import "styled-components";
 
 export const theme = {
-  primary: "#5ECA83",
-  titles: "#131523",
+  primary: "#3e7049",
+  titles: "#123f35",
   descriptions: "#737373",
-  texts: "#475569",
-  navigation: "#505050",
-  date: "#94A3B8",
+  texts: "#123f35",
+  navigation: "#FFF",
+  date: "#123f35",
 
-  header: "#FFF",
+  header: "#123f35",
   background: "#F2F2F2",
 
   black: "#000",

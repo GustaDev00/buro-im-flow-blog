@@ -9,6 +9,7 @@ import { GlobalStyles } from "@/styles/global";
 import { GSAPInitializer } from "@/components/atoms/gsap-initializer";
 import Nav from "@/shared/nav";
 import { Footer } from "@/shared/footer";
+import { FpjsProvider } from "@fingerprintjs/fingerprintjs-pro-react";
 
 const RootLayout = ({
   children,
@@ -18,17 +19,23 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={fontNames}>
-        <StyledComponentsRegistry>
-          <ThemeProvider theme={theme}>
-            <GlobalStyles />
-            <GSAPInitializer />
-            <Nav />
-            <main>
-              <Suspense>{children}</Suspense>
-            </main>
-            <Footer />
-          </ThemeProvider>
-        </StyledComponentsRegistry>
+        <FpjsProvider
+          loadOptions={{
+            apiKey: "29YjKqc5r2cevJ3GSXDP",
+          }}
+        >
+          <StyledComponentsRegistry>
+            <ThemeProvider theme={theme}>
+              <GlobalStyles />
+              <GSAPInitializer />
+              <Nav />
+              <main>
+                <Suspense>{children}</Suspense>
+              </main>
+              <Footer />
+            </ThemeProvider>
+          </StyledComponentsRegistry>
+        </FpjsProvider>
       </body>
     </html>
   );
