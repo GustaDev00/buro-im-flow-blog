@@ -8,6 +8,8 @@ export const VisitorData = ({ id, children }: { id: string; children: ReactNode 
   const { data: visitorData, error } = useVisitorData();
 
   if (error) {
+    console.error("Failed to load visitor data", error);
+
     return <div>{children}</div>;
   }
 
